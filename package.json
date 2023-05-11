@@ -32,5 +32,18 @@
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.2"
-  }
+  },
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NS-Sheam/car-doctor-client-m-69.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NS-Sheam/car-doctor-client-m-69/issues"
+  },
+  "homepage": "https://github.com/NS-Sheam/car-doctor-client-m-69#readme",
+  "description": ""
 }
