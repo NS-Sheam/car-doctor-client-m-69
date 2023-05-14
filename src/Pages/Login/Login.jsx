@@ -27,13 +27,13 @@ const Login = () => {
                     },
                     body: JSON.stringify(loggedUser)
                 })
-                .then(res => res.json())
-                .then(data => {
-                    console.log("jwt response", data);
-                    
-                    // warning: Local storage is not the best (second best place) to store access token 
-                    localStorage.setItem('car-access-token', data.token);
-                    navigate(from, {replace: true});
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log("jwt response", data);
+
+                        // warning: Local storage is not the best (second best place) to store access token 
+                        localStorage.setItem('car-access-token', data.token);
+                        navigate(from, { replace: true });
                     })
             })
             .catch(error => {
