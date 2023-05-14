@@ -29,7 +29,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <BookService></BookService>
                 </PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://car-doctor-server-ns-sheam.vercel.app/services/${params.id}`)
             },
             {
                 path: "bookings",

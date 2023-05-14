@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.svg"
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                localStorage.removeItem("car-access-token")
+                
             })
             .catch(error => {
                 console.log(error);
@@ -46,7 +47,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+                <ScrollLink to="#services">
                 <button className="btn btn-outline btn-warning">APPOINTMENT</button>
+                </ScrollLink>
             </div>
         </div>
     );
