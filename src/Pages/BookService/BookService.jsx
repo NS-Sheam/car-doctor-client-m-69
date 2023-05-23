@@ -23,7 +23,7 @@ const BookService = () => {
         }
         // console.log(order);
 
-        fetch("https://car-doctor-server-ns-sheam.vercel.app/bookings", {
+        fetch("https://car-doctor-server-pi.vercel.app/bookings", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
